@@ -7,7 +7,7 @@ export default function Home() {
   const navigate = useNavigate();
 
   const handleContact = () => {
-    return navigate("/contact");
+    return navigate("/portfolio-new/contact");
   };
 
   return (

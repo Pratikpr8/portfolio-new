@@ -1,0 +1,98 @@
+.app__contact {
+  text-align: center;
+  padding: 50px;
+}
+
+.app__contact img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: -2;
+}
+
+.app__contact h1 {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: capitalize;
+  color: var(--color-gray);
+}
+
+.app__contact-content {
+  margin-top: 1rem;
+  padding: 25px;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.app__contact-content div {
+  margin-bottom: 2rem;
+}
+
+.app__contact-content div p:first-child {
+  margin-bottom: 1rem;
+  font-size: 25px;
+  color: var(--color-blue);
+}
+
+.app__contact-content div p:last-child {
+  font-weight: 600;
+}
+
+.headtext__opensans.email {
+  text-transform: unset;
+}
+
+@media screen and (max-width: 1150px) {
+  .app__contact-content div p:last-child {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .app__contact h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__contact h1 {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
+  .app__contact-content div p:last-child {
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app__contact {
+    padding: 20px;
+  }
+  .app__contact h1 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .app__contact-content {
+    padding-left: 0;
+  }
+
+  .app__contact-content div {
+    text-align: left;
+  }
+
+  .app__contact-content div p:first-child {
+    font-size: 20px;
+  }
+
+  .app__contact-content div p:last-child {
+    font-weight: 500;
+    font-size: 16px;
+  }
+}

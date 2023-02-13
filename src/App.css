@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex__center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.section__size {
+  position: relative;
+  min-height: calc(100vh - 120px);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.headtext__opensans {
+  font-family: var(--font-base);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+}
+
+.p__opensans {
+  font-family: var(--font-base);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+}
+
+.btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 25px;
+  color: var(--color-gray);
+}
+
+.btn:hover {
+  background: var(--color-lightgray);
+}
+
+@media screen and (max-width: 1150px) {
+}
+@media screen and (max-width: 850px) {
+  .p__opensans {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 650px) {
+  .headtext__opensans {
+    font-size: 23px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+  }
+  .p__opensans {
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .headtext__opensans {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+  }
+
+  .p__opensans {
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.04em;
   }
 }

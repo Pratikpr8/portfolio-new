@@ -1,9 +1,9 @@
 import React from "react";
 import { images } from "../../constants";
-import "./Home.css";
+import "./AboutMe.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Home() {
+export default function AboutMe() {
   const navigate = useNavigate();
 
   const handleContact = () => {
@@ -14,7 +14,7 @@ export default function Home() {
     <div className="app__home section__size">
       <div className="app__home-content">
         <div className="app__home-content_pic">
-          <img src={images.pic} alt="pratik pic" />
+          <img src={images.pic} alt="pratik pic" loading="lazy" />
           <div className="app__home-content_pic-gradient" />
         </div>
         <div className="app__home-content_info">
@@ -26,8 +26,8 @@ export default function Home() {
             advance my career and my personal development.
           </p>
           <div className="app__home-btn-container">
-            <button className="btn home">Download CV</button>
-            <button onClick={handleContact} className="btn home">
+            <button className="btn home-cv">Download CV</button>
+            <button onClick={handleContact} className="btn home-contact">
               Contact
             </button>
           </div>

@@ -1,53 +1,46 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "./Portfolio.css";
-import { images } from "../../constants";
-import { Card } from "../../components";
 import { data } from "../../constants";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { RxEyeOpen } from "react-icons/rx";
+import { AiFillGithub } from "react-icons/ai";
 
 export default function Portfolio() {
-  const scrollRef = useRef(null);
-  const [toggleRight, setToggleRight] = useState(false);
-
-  const scroll = (offset) => {
-    scrollRef.current.scrollLeft += offset;
-  };
-
   return (
-    <div className="app__portfolio section__size">
-      <img src={images.cloud} alt="cloud background" id="cloud" />
-      <h1 className="headtext__opensans">Check out some of my projects...</h1>
-      <div className="app__portfolio-main">
-        <div className="app__portfolio-content" ref={scrollRef}>
-          <div className="app__portfolio-content_projects">
-            {data.projects.map((project) => {
-              return (
-                <div key={project.id} className="app__portfolio-card">
-                  <Card {...project} />
-                </div>
-              );
-            })}
-          </div>
-
-          <AiOutlineRight
-            color="#000"
-            fontSize={38}
-            className="arrow-right"
-            onClick={() => {
-              scroll(300);
-              setToggleRight(true);
-            }}
-          />
-
-          {toggleRight && (
-            <AiOutlineLeft
-              color="#000"
-              fontSize={38}
-              className="arrow-left"
-              onClick={() => scroll(-300)}
-            />
-          )}
-        </div>
+    <div className="app__portfolio">
+      <div className="app__portfolio-gradient" />
+      <h1 className="p__opensans port-heading">
+        Check out some of my projects....
+      </h1>
+      <div className="app__portfolio-projects-list">
+        {data.projects.map((project) => {
+          return (
+            <div
+              key={project.id}
+              className="app__porfolio-project flex__center"
+            >
+              <img src={project.imgurl} alt="project img" loading="lazy" />
+              <h1 className="headtext__opensans">{project.title}</h1>
+              <a
+                className="p__opensans"
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <RxEyeOpen fontSize={30} className="svg-color port" />
+                Open Project
+              </a>
+              <a
+                className="p__opensans"
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub fontSize={30} className="svg-color port" />
+                Github Repo
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

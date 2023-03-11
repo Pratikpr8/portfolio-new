@@ -13,12 +13,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-gray);
 }
 
 .app__navbar-logo img {
   width: 75px;
   height: 50px;
   object-fit: contain;
+}
+
+.app__navbar-logo p {
+  font-size: 20px;
 }
 
 .app__navbar-logo p span {
@@ -35,6 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--color-gray);
 }
 
 .app__navbar-list li {

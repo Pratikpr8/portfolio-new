@@ -12,17 +12,17 @@
 .headtext__opensans {
   font-family: var(--font-base);
   font-weight: 700;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 32px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
 }
 
 .p__opensans {
   font-family: var(--font-base);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: capitalize;
 }
 
@@ -42,38 +42,27 @@
   background: var(--color-lightgray);
 }
 
-@media screen and (max-width: 1150px) {
+.svg-color {
+  color: var(--color-blue);
 }
-@media screen and (max-width: 850px) {
-  .p__opensans {
-    font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0.06em;
-  }
-}
+
 @media screen and (max-width: 650px) {
   .headtext__opensans {
-    font-size: 23px;
     line-height: 30px;
-    letter-spacing: 0.06em;
   }
   .p__opensans {
     font-size: 17px;
     line-height: 21px;
-    letter-spacing: 0.06em;
   }
 }
 
 @media screen and (max-width: 350px) {
   .headtext__opensans {
-    font-size: 20px;
     line-height: 25px;
-    letter-spacing: 0.04em;
   }
 
   .p__opensans {
     font-size: 15px;
     line-height: 16px;
-    letter-spacing: 0.04em;
   }
 }

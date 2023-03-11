@@ -1,24 +1,38 @@
 import React from "react";
 import "./Contact.css";
-import { images } from "../../constants";
+import { FaMobileAlt } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
+import { AiOutlineMail } from "react-icons/ai";
 
 export default function Contact() {
   return (
-    <div className="app__contact section__size contact-bg">
-      <img src={images.cloud} alt="cloud background" />
-      <h1 className="headtext__opensans">Reach out to me.</h1>
+    <div className="app__contact">
       <div className="app__contact-content">
-        <div>
-          <p className="p__opensans email">Email</p>
-          <p className="headtext__opensans">pratikpr.official8@gmail.com</p>
+        <div className="app__contact-content_userinfo">
+          <p className="p__opensans contact-details">Contact Details</p>
+
+          <div className="app__contact-content_userinfo-items">
+            <FaMobileAlt fontSize={40} className="svg-color" />
+            <p className="p__opensans">+977 9863025519</p>
+          </div>
+          <div className="app__contact-content_userinfo-items">
+            <MdLocationOn fontSize={40} className="svg-color" />
+            <p className="p__opensans">Mhepi-Kathmandu, Nepal</p>
+          </div>
+          <div className="app__contact-content_userinfo-items">
+            <AiOutlineMail fontSize={40} className="svg-color" />
+            <p className="p__opensans contact-email">pratikpuri.pr@gmail.com</p>
+          </div>
         </div>
-        <div>
-          <p className="p__opensans email">Mobile</p>
-          <p className="headtext__opensans">+9779863025519</p>
-        </div>
-        <div>
-          <p className="p__opensans email">Address</p>
-          <p className="headtext__opensans">Mhepi, Kathmandu</p>
+
+        <div className="app__contact-content_form">
+          <p className="p__opensans">Get in touch</p>
+          <form className="app__contact-content_form-items">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <textarea placeholder="Message" />
+            <button className="btn">Send Message</button>
+          </form>
         </div>
       </div>
     </div>

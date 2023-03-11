@@ -1,98 +1,134 @@
 .app__contact {
-  text-align: center;
-  padding: 50px;
-}
-
-.app__contact img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.4;
-  z-index: -2;
-}
-
-.app__contact h1 {
-  font-size: 30px;
-  line-height: 35px;
-  text-transform: capitalize;
-  color: var(--color-gray);
+  height: 80vh;
+  padding: 20px;
 }
 
 .app__contact-content {
-  margin-top: 1rem;
-  padding: 25px;
-  max-width: 650px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.app__contact-content div {
-  margin-bottom: 2rem;
+.app__contact-content_userinfo {
+  width: 50%;
+  height: 400px;
+  padding: 20px;
+  margin: 1rem 1rem;
 }
 
-.app__contact-content div p:first-child {
+.app__contact-content_userinfo p.contact-details {
   margin-bottom: 1rem;
-  font-size: 25px;
+  border-top: 2px solid var(--color-lightgray);
+  border-bottom: 2px solid var(--color-lightgray);
+  text-align: left;
+  color: var(--color-blue);
+  padding: 1rem 0;
+}
+
+.app__contact-content_userinfo-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 3rem auto;
+}
+
+.app__contact-content_userinfo-items svg {
+  margin-right: 2rem;
   color: var(--color-blue);
 }
 
-.app__contact-content div p:last-child {
-  font-weight: 600;
-}
-
-.headtext__opensans.email {
+.p__opensans.contact-email {
   text-transform: unset;
 }
 
+.app__contact-content_form {
+  padding: 20px;
+  width: 50%;
+  height: 400px;
+  margin: 1rem 1rem;
+}
+
+.app__contact-content_form p {
+  text-align: end;
+  color: var(--color-blue);
+  margin-bottom: 1rem;
+  border-top: 2px solid var(--color-lightgray);
+  border-bottom: 2px solid var(--color-lightgray);
+  padding: 1rem 0;
+}
+
+.app__contact-content_form-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.app__contact-content_form-items input {
+  width: 65%;
+  max-width: 75%;
+  padding: 10px 10px;
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: inherit;
+  font-family: var(--font-base);
+}
+
+.app__contact-content_form-items input:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 var(--color-gray);
+  transition: all 100ms;
+}
+
+.app__contact-content_form-items textarea {
+  width: 65%;
+  max-width: 75%;
+  resize: none;
+  height: 150px;
+  border: 1px solid var(--color-gray);
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: inherit;
+  font-family: var(--font-base);
+}
+
+.app__contact-content_form-items textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px 0 var(--color-gray);
+  transition: all 100ms;
+}
+
+.app__contact-content_form-items button {
+  border: 2px solid var(--color-blue);
+  padding: 10px 20px;
+  margin-top: 0.8rem;
+}
+
+.app__contact-content_form-items button:hover {
+  background-color: var(--color-blue);
+  color: var(--color-lightgray);
+}
+
 @media screen and (max-width: 1150px) {
-  .app__contact-content div p:last-child {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  .app__contact h1 {
-    font-size: 28px;
-    line-height: 32px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .app__contact h1 {
-    font-size: 26px;
-    line-height: 30px;
-    letter-spacing: 0.04em;
-  }
-  .app__contact-content div p:last-child {
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 0.04em;
-  }
-}
-
-@media screen and (max-width: 500px) {
   .app__contact {
-    padding: 20px;
-  }
-  .app__contact h1 {
-    text-align: left;
-    font-size: 20px;
-    line-height: 25px;
+    height: unset;
   }
   .app__contact-content {
-    padding-left: 0;
+    flex-direction: column;
   }
-
-  .app__contact-content div {
-    text-align: left;
+  .app__contact-content_form,
+  .app__contact-content_userinfo {
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    margin: 1rem 1rem;
   }
-
-  .app__contact-content div p:first-child {
-    font-size: 20px;
+  .app__contact-content_userinfo-items {
+    margin: 2rem auto;
   }
-
-  .app__contact-content div p:last-child {
-    font-weight: 500;
-    font-size: 16px;
+  .app__contact-content_form {
+    height: 400px;
   }
 }

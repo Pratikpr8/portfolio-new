@@ -1,6 +1,5 @@
-import Home from "./Home/Home";
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
-import Card from "./Card/Card";
+import AboutMe from "./AboutMe/AboutMe";
 
-export { Home, Navbar, Footer, Card };
+export { AboutMe, Navbar, Footer };

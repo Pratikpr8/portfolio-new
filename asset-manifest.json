@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio-new/static/css/main.fe00c54c.css",
-    "main.js": "/portfolio-new/static/js/main.27bcf13f.js",
-    "static/media/pp-pic.png": "/portfolio-new/static/media/pp-pic.0465309fd312c04b4692.png",
+    "main.css": "/portfolio-new/static/css/main.73676b4d.css",
+    "main.js": "/portfolio-new/static/js/main.89e2754f.js",
+    "static/media/pp-pic.png": "/portfolio-new/static/media/pp-pic.94cfea76b103ed2bc950.png",
     "static/media/netflix.png": "/portfolio-new/static/media/netflix.447489b3d5e37d8580b8.png",
-    "static/media/clouds.jpg": "/portfolio-new/static/media/clouds.ca84ab888073c618362c.jpg",
-    "static/media/pp-bg.jpg": "/portfolio-new/static/media/pp-bg.1321a5660a023a8fd4d2.jpg",
     "static/media/gericht.png": "/portfolio-new/static/media/gericht.68e83870369f6cc04581.png",
     "static/media/todo.png": "/portfolio-new/static/media/todo.905f9045624863ef4389.png",
     "static/media/tenzies.png": "/portfolio-new/static/media/tenzies.0e8657eb79ced707dfce.png",
+    "static/media/employee.png": "/portfolio-new/static/media/employee.ab10363c2dbbfcbf8a8e.png",
+    "static/media/pratik-puri-resume.pdf": "/portfolio-new/static/media/pratik-puri-resume.1e547c3dd42cf7607511.pdf",
     "index.html": "/portfolio-new/index.html",
-    "main.fe00c54c.css.map": "/portfolio-new/static/css/main.fe00c54c.css.map",
-    "main.27bcf13f.js.map": "/portfolio-new/static/js/main.27bcf13f.js.map"
+    "main.73676b4d.css.map": "/portfolio-new/static/css/main.73676b4d.css.map",
+    "main.89e2754f.js.map": "/portfolio-new/static/js/main.89e2754f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe00c54c.css",
-    "static/js/main.27bcf13f.js"
+    "static/css/main.73676b4d.css",
+    "static/js/main.89e2754f.js"
   ]
 }

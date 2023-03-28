@@ -11,7 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
 }
 
 .port-heading {
@@ -34,6 +34,7 @@
   height: 450px;
   margin: 5px;
   border-radius: 10px;
+  border: 1px solid var(--color-gray);
 }
 
 .app__porfolio-project:hover {

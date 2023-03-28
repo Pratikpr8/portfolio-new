@@ -24,6 +24,13 @@ const projects = [
   },
   {
     id: 4,
+    imgurl: images.employee,
+    title: "Employee Details",
+    url: "https://pratikpr8.github.io/employee-details-app/",
+    github: "https://github.com/Pratikpr8/employee-details-app",
+  },
+  {
+    id: 5,
     imgurl: images.todo,
     title: "Todo App",
     url: "https://pratikpr8.github.io/REACT-Todo/",

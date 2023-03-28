@@ -2,37 +2,41 @@ import React, { useState } from "react";
 import { images } from "../../constants";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-
 import { GiHamburgerMenu, GiCrossMark } from "react-icons/gi";
+import { Flip } from "react-reveal";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
     <div className="app__navbar">
-      <div className="app__navbar-logo">
-        <img src={images.logo} alt="Pp logo" />
-        <p className="headtext__opensans">
-          <Link to="/portfolio-new/">
-            Pratik<span> Puri</span>
-          </Link>
-        </p>
-      </div>
+      <Flip left>
+        <div className="app__navbar-logo">
+          <img src={images.logo} alt="Pp logo" />
+          <p className="headtext__opensans">
+            <Link to="/portfolio-new/">
+              Pratik<span> Puri</span>
+            </Link>
+          </p>
+        </div>
+      </Flip>
 
-      <div className="app__navbar-links">
-        <ul className="app__navbar-list">
-          <li className="p__opensans">
-            <Link to="/portfolio-new/">About Me</Link>
-          </li>
+      <Flip right>
+        <div className="app__navbar-links">
+          <ul className="app__navbar-list">
+            <li className="p__opensans">
+              <Link to="/portfolio-new/">About Me</Link>
+            </li>
 
-          <li className="p__opensans">
-            <Link to="/portfolio-new/portfolio">Portfolio</Link>
-          </li>
-          <li className="p__opensans">
-            <Link to="/portfolio-new/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
+            <li className="p__opensans">
+              <Link to="/portfolio-new/portfolio">Portfolio</Link>
+            </li>
+            <li className="p__opensans">
+              <Link to="/portfolio-new/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
+      </Flip>
 
       <div className="app__navbar-smallscreen-links">
         <GiHamburgerMenu

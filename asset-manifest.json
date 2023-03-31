@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-new/static/css/main.73676b4d.css",
-    "main.js": "/portfolio-new/static/js/main.89e2754f.js",
+    "main.css": "/portfolio-new/static/css/main.8196d54c.css",
+    "main.js": "/portfolio-new/static/js/main.b7378e6b.js",
     "static/media/pp-pic.png": "/portfolio-new/static/media/pp-pic.94cfea76b103ed2bc950.png",
     "static/media/netflix.png": "/portfolio-new/static/media/netflix.447489b3d5e37d8580b8.png",
     "static/media/gericht.png": "/portfolio-new/static/media/gericht.68e83870369f6cc04581.png",
@@ -10,11 +10,11 @@
     "static/media/employee.png": "/portfolio-new/static/media/employee.ab10363c2dbbfcbf8a8e.png",
     "static/media/pratik-puri-resume.pdf": "/portfolio-new/static/media/pratik-puri-resume.1e547c3dd42cf7607511.pdf",
     "index.html": "/portfolio-new/index.html",
-    "main.73676b4d.css.map": "/portfolio-new/static/css/main.73676b4d.css.map",
-    "main.89e2754f.js.map": "/portfolio-new/static/js/main.89e2754f.js.map"
+    "main.8196d54c.css.map": "/portfolio-new/static/css/main.8196d54c.css.map",
+    "main.b7378e6b.js.map": "/portfolio-new/static/js/main.b7378e6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.73676b4d.css",
-    "static/js/main.89e2754f.js"
+    "static/css/main.8196d54c.css",
+    "static/js/main.b7378e6b.js"
   ]
 }

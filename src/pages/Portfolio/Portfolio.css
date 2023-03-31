@@ -72,6 +72,18 @@
   margin-right: 0.6rem;
 }
 
+@media screen and (max-width: 1150px) {
+  .app__porfolio-project {
+    width: 375px;
+    height: 400px;
+  }
+
+  .app__porfolio-project img {
+    width: 325px;
+    height: 300px;
+  }
+}
+
 @media screen and (max-width: 850px) {
   .app__portfolio-projects-list {
     grid-template-columns: repeat(1, 1fr);
@@ -80,12 +92,12 @@
 
 @media screen and (max-width: 500px) {
   .app__porfolio-project {
-    width: 400px;
-    height: 400px;
+    width: 280px;
+    height: 330px;
   }
 
   .app__porfolio-project img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 230px;
   }
 }

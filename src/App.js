@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/portfolio-new/" element={<AboutMe />} />
-        <Route path="/portfolio-new/portfolio" element={<Portfolio />} />
-        <Route path="/portfolio-new/contact" element={<Contact />} />
+        <Route path="/portfolio-new/portfolio/" element={<Portfolio />} />
+        <Route path="/portfolio-new/contact/" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

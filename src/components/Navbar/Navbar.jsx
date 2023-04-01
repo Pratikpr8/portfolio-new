@@ -14,7 +14,7 @@ export default function Navbar() {
         <div className="app__navbar-logo">
           <img src={images.logo} alt="Pp logo" />
           <p className="headtext__opensans">
-            <Link to="/portfolio-new/">
+            <Link to="/">
               Pratik<span> Puri</span>
             </Link>
           </p>
@@ -25,14 +25,14 @@ export default function Navbar() {
         <div className="app__navbar-links">
           <ul className="app__navbar-list">
             <li className="p__opensans">
-              <Link to="/portfolio-new/">About Me</Link>
+              <Link to="/">About Me</Link>
             </li>
 
             <li className="p__opensans">
-              <Link to="/portfolio-new/portfolio">Portfolio</Link>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
             <li className="p__opensans">
-              <Link to="/portfolio-new/contact">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -59,14 +59,14 @@ export default function Navbar() {
 
             <ul className="app__navbar-smallscreen-list">
               <li onClick={() => setToggleMenu(false)} className="p__opensans">
-                <Link to="/portfolio-new/">About Me</Link>
+                <Link to="/">About Me</Link>
               </li>
 
               <li onClick={() => setToggleMenu(false)} className="p__opensans">
-                <Link to="/portfolio-new/portfolio">Portfolio</Link>
+                <Link to="/portfolio">Portfolio</Link>
               </li>
               <li onClick={() => setToggleMenu(false)} className="p__opensans">
-                <Link to="/portfolio-new/contact">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

@@ -9,7 +9,7 @@ export default function AboutMe() {
   const navigate = useNavigate();
 
   const handleContact = () => {
-    return navigate("/portfolio-new/contact");
+    return navigate("/contact");
   };
 
   return (

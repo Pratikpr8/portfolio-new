@@ -8,10 +8,6 @@ import cv from "../../assets/pratik-puri-resume.pdf";
 export default function AboutMe() {
   const navigate = useNavigate();
 
-  const handleContact = () => {
-    return navigate("/contact");
-  };
-
   return (
     <div className="app__home section__size">
       <div className="app__home-content">
@@ -30,16 +26,21 @@ export default function AboutMe() {
               <br />
               <br />
               <strong>
-                React, HTML, CSS, JavaScript, Git, SASS, Basic Redux And Figma.
+                HTML, CSS, JavaScript, React, Redux, Git, Firebase, MUI, SASS,
+                Basic Figma.
               </strong>
             </p>
             <div className="app__home-btn-container">
               <a href={cv} target="_blank" rel="noopener noreferrer">
                 <button className="btn home-cv">Download CV</button>
               </a>
-              <button onClick={handleContact} className="btn home-contact">
-                Contact
-              </button>
+              <a
+                href="https://github.com/Pratikpr8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="btn home-cv">Github</button>
+              </a>
             </div>
           </div>
         </Zoom>

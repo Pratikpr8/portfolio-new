@@ -43,7 +43,7 @@
 }
 
 .svg-color {
-  color: var(--color-blue);
+  color: var(--color-gray);
 }
 
 @media screen and (max-width: 650px) {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { AboutMe } from "./components";
+import AboutMe from "./pages/AboutMe/AboutMe";
 import { Navbar } from "./components";
 import { Footer } from "./components";
 import { Routes, Route } from "react-router-dom";

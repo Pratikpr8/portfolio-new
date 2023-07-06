@@ -86,7 +86,7 @@
 
 .btn.home-cv {
   border: 2px solid var(--color-blue);
-  padding: 10px 20px;
+  padding: 12px 25px;
 }
 
 .btn.home-cv:hover {
@@ -95,7 +95,7 @@
 }
 .btn.home-contact {
   border: 2px solid var(--color-gray);
-  padding: 10px 20px;
+  padding: 12px 25px;
 }
 
 .btn.home-contact:hover {
@@ -127,5 +127,26 @@
     text-align: center;
     max-width: unset;
     margin: 0.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .p__opensans.title {
+    font-size: 15px;
+    margin-bottom: 0.7rem;
+  }
+
+  .headtext__opensans.name {
+    font-size: 25px;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.5rem;
+  }
+
+  .p__opensans.description {
+    word-break: keep-all;
+    max-width: 750px;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
   }
 }

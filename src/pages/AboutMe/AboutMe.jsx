@@ -1,13 +1,10 @@
 import React from "react";
 import { images } from "../../constants";
 import "./AboutMe.css";
-import { useNavigate } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import cv from "../../assets/pratik-puri-resume.pdf";
 
 export default function AboutMe() {
-  const navigate = useNavigate();
-
   return (
     <div className="app__home section__size">
       <div className="app__home-content">

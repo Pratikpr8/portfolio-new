@@ -29,14 +29,14 @@ export default function AboutMe() {
             </p>
             <div className="app__home-btn-container">
               <a href={cv} target="_blank" rel="noopener noreferrer">
-                <button className="btn home-cv">Download CV</button>
+                <button className="btn home-btn">Download CV</button>
               </a>
               <a
                 href="https://github.com/Pratikpr8"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="btn home-cv">Github</button>
+                <button className="btn home-btn">Github</button>
               </a>
             </div>
           </div>

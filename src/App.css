@@ -54,6 +54,9 @@
     font-size: 17px;
     line-height: 21px;
   }
+  .btn {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 350px) {

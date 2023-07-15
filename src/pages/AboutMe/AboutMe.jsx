@@ -29,7 +29,7 @@ export default function AboutMe() {
             </p>
             <div className="app__home-btn-container">
               <a href={cv} target="_blank" rel="noopener noreferrer">
-                <button className="btn home-btn">Download CV</button>
+                <button className="btn home-btn">Resume</button>
               </a>
               <a
                 href="https://github.com/Pratikpr8"

@@ -39,7 +39,7 @@
 }
 
 .p__opensans.contact-email {
-  text-transform: unset;
+  text-transform: lowercase;
 }
 
 .app__contact-content_form {

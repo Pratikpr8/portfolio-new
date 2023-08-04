@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
+@font-face {
+  font-family: "Burtons";
+  src: local("Burtons"), url(./fonts/Burtons.otf) format("truetype");
+}
+
 :root {
-  --font-base: "Open Sans", sans-serif;
+  --font-base: "Burtons", "sans-serif";
+  --font-secondary: "Open Sans", "sans-serif";
   --color-black: #000000;
   --color-gray: #a6a6a6;
   --color-lightgray: #f1f1f2;
   --color-white: #fdffff;
   --color-blue: hsl(212, 100%, 48%);
+}
+
+body {
+  background: radial-gradient(var(--color-white), var(--color-lightgray));
 }
 
 * {

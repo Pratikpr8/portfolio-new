@@ -22,7 +22,7 @@ export default function AboutMe() {
               order to advance my career and my personal development.
               <br />
               <br />
-              <strong>
+              <strong style={{ color: "var(--color-black)" }}>
                 HTML, CSS, JavaScript, React, Redux, Git, Firebase, MUI, SASS,
                 Basic Figma.
               </strong>

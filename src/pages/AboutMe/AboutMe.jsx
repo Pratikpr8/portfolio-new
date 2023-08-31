@@ -24,7 +24,7 @@ export default function AboutMe() {
               <br />
               <strong style={{ color: "var(--color-black)" }}>
                 HTML, CSS, JavaScript, React, Redux, Git, Firebase, MUI, SASS,
-                Basic Figma.
+                Basic Figma, Basic Nextjs and Tailwind and Typescript.
               </strong>
             </p>
             <div className="app__home-btn-container">
